@@ -1,13 +1,12 @@
 <?php
 
 namespace test;
-
+require_once '../vendor/autoload.php';
+use App\Class\Humain;
 use DateTime;
 use PHPUnit\Framework\TestCase;
-use App\Class\Humain;
 
-
-class HumainTest extends TestCase
+class HumainTest2 extends TestCase
 {
     public function testConstructeur()
     {

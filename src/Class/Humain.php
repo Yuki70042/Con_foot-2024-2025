@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Class;
+namespace App\Class;
 
 use DateTime;
 
@@ -12,11 +12,11 @@ class Humain
 
     public function __construct(string $nom, string $prenom, datetime $dateNaissance)
     {
-        $this->nom = $nom; // $this->nom : c'est le nom de l'objet en cours,
-        // $nom est la propriété du constructeur
+        $this->nom = $nom; //$this->nom : c'est le nom de l'objet en cours, $nom est la propriété du constructeur
         $this->prenom = $prenom;
         $this->dateNaissance = $dateNaissance;
     }
+
 
     public function getNom(): string
     {
@@ -50,7 +50,6 @@ class Humain
 
     public function donneTexte(): string
     {
-        return $this->nom . " " . $this->prenom . " né le "
-            . $this->dateNaissance->format("d/m/Y");
+        return $this->nom . " " . $this->prenom . " né le  " . $this->dateNaissance->format("d/m/Y");
     }
 }

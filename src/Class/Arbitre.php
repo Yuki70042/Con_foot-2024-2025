@@ -1,9 +1,8 @@
 <?php
 
-namespace src\Class;
+namespace App\Class;
 
 use DateTime;
-
 
 class Arbitre extends Humain
 {
