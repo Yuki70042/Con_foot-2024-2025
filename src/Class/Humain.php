@@ -50,6 +50,6 @@ class Humain
 
     public function donneTexte(): string
     {
-        return $this->nom . " " . $this->prenom . " né le  " . $this->dateNaissance->format("d/m/Y");
+        return $this->nom . " " . $this->prenom . " né le " . $this->dateNaissance->format("d/m/Y");
     }
 }
