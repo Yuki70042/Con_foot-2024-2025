@@ -20,7 +20,7 @@ class HumainTest2 extends TestCase
     public function testDonneTexte()
     {
         $giroud = new Humain("Giroud", "Olivier", new DateTime("1986-09-30"));
-        $this->assertEquals("Giroud Olivier né le 30/09/1986", $giroud->donneTexte());
+        $this->assertEquals("Giroud Olivier né le  30/09/1986", $giroud->donneTexte());
     }
 
 

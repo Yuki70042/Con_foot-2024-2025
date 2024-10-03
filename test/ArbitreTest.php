@@ -6,7 +6,7 @@ namespace test;
 
 use DateTime;
 use PHPUnit\Framework\TestCase;
-use src\Class\Arbitre;
+use App\Class\Arbitre;
 
 class ArbitreTest extends TestCase
 {

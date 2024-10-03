@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Class;
+namespace App\Class;
 
 class Stade
 {
