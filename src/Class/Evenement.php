@@ -2,19 +2,38 @@
 
 namespace App\Class;
 
+use DateTime;
+
 class Evenement
 {
-    private time $heureEvenement;
-    private string $descriptionEvenement;
+    private DateTime $horaire;
+    private string $description;
 
-    private string $dateEvenement;
-
-    public function __construct(string $nom, string $prenom, \DateTime $dateNaissance,  int $numero, Equipe $equipe)
-    {
-        parent::__construct($nom, $prenom, $dateNaissance);
-        $this->equipe = $equipe;
-        $equipe->ajouterJoueur($this);
-        //Construction propre au joueur
-        $this->numero = $numero;
+    public function __construct(DateTime $horaire, string $description){
+        $this->horaire = $horaire;
+        $this->description = $description;
     }
+
+    public function getHoraire(): DateTime
+    {
+        return $this->horaire;
+    }
+
+    public function setHoraire(DateTime $horaire): void{
+        $this->horaire = $horaire;
+    }
+
+    public function getDescription(): string{
+        return $this->description;
+    }
+
+    public function setDescription(string $description): void{
+        $this->description = $description;
+    }
+
+    public function donneTexte()
+    {
+        return " ".$this->description." à ".$this->horaire->format('H:i');
+    }
+
 }
